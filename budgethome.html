@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget webapp</title>
+    <link rel="stylesheet" href="./budgethome.css">
+    <link rel="stylesheet" href='./fontawesome-free-5.15.4-web/css/all.min.css'>
+</head>
+
+<body>
+    <!-- container holding the designs  -->
+    <div class="container">
+        <div class="top">
+            <span class="heading">LETS_X-BUDGET</span>
+            <div class="header-row">
+
+                <div class="expense-row">
+                    <div class="expense-amount">
+                        <div class="DATE" style="font-family:cursive; font-size:10px; color:white;">date</div>
+                        <div class="balance-amount" style="color: aliceblue; font-size: 2rem;">0$ </div>
+                        <div class="income-amount" style="color: aliceblue; padding-right: 150px;">income</div>
+                        <div class="outcome-amount" style="color: aliceblue; padding-left: 150px;">outcome</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="budget-row">
+                <div class="expense-income">
+                    <div class="income-tab">Income</div>
+                    <div class="expense-tab ">expenses</div>
+
+                </div>
+                <div class="input">
+                    <img src="./Add-Button-PNG (4).png" alt="" style="height: 20px; " id="add-income">
+                    <input type="text" placeholder="income-tittle" id="income-title">
+                    <input type="number" name="amount" id="incomes-amount" placeholder="$0">
+                </div>
+            </div>
+
+            <div class="bottom " id="income">
+
+
+                <ul class="list" style="padding-top:8%;" id="list"></ul>
+
+            </div>
+
+
+            <div class="bottom hide " id="expense">
+
+
+
+                <div class="input" style="position: fixed;">
+
+                    <img src="./Add-Button-PNG (4).png" alt="" style="height: 20px;" id="add-incomes">
+
+                    <input type="text" placeholder="expense-title" id="expense-title">
+                    <input type="number" name="amount" id="expense-amount" placeholder="$0">
+
+
+                </div>
+                <ul class="lists" style="padding:8%;" id="list"></ul>
+            </div>
+
+
+        </div>
+
+        <script src="./functionality.js"></script>
+        <script src="./secondfunctionality.js"></script>
+        <script src="./thirdfunctionality.js"></script>
+    </div>
+    </div>
+
+</body>
+
+</html>
